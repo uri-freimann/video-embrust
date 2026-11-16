@@ -28,11 +28,11 @@ use esp_radio::wifi::{
     sta::StationConfig,
 };
 use heapless::String;
-use rs_stream::{
+use static_cell::StaticCell;
+use video_embrust::{
     Esp32S3Eye, ensure_flash_qe, jpeg_buffers, jpeg_slice,
     sensors::{Resolution, ov5640::Ov5640},
 };
-use static_cell::StaticCell;
 
 esp_bootloader_esp_idf::esp_app_desc!();
 
